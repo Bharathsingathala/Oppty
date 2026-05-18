@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='52' font-size='52'%3E%F0%9F%8F%99%EF%B8%8F%3C/text%3E%3C/svg%3E"
+    />
+    <title>Contact and Registration</title>
+  </head>
+  <body>
+    <header id="top">
+      <h1>Contact, Registration, and Feedback</h1>
+      <p>
+        Use this form to register interest in smart city updates or send citizen
+        feedback.
+      </p>
+      <nav aria-label="Main navigation">
+        <p>
+          <a href="index.html" title="Go to home page">Home</a> |
+          <a href="about.html" title="Learn about smart Bengaluru">About</a> |
+          <a href="gallery.html" title="View Bengaluru gallery">Gallery</a> |
+          <a href="contact.html" title="Register or send feedback">Contact</a> |
+          <a href="timetable.html" title="View timetable">Timetable</a> |
+          <a href="menu.html" title="View restaurant menu">Smart Cafe Menu</a>
+        </p>
+      </nav>
+      <hr />
+    </header>
+
+    <main>
+      <section>
+        <h2>Citizen Registration Form</h2>
+        <form
+          action="mailto:info@smartcitybengaluru.example"
+          method="post"
+          enctype="text/plain"
+          title="Smart city registration form"
+        >
+          <fieldset>
+            <legend>Personal Details</legend>
+            <p>
+              <label for="fullname">Full Name:</label><br />
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Enter your full name"
+                required
+                title="Type your full name"
+              />
+            </p>
+            <p>
+              <label for="email">Email:</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="name@example.com"
+                required
+                title="Type your email address"
+              />
+            </p>
+            <p>
+              <label for="phone">Phone:</label><br />
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+91 98765 43210"
+                required
+                title="Type your phone number"
+              />
+            </p>
+            <p>
+              <label for="password">Create Password:</label><br />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                title="Create a password"
+              />
+            </p>
+            <p>
+              <label for="birthdate">Date of Birth:</label><br />
+              <input
+                type="date"
+                id="birthdate"
+                name="birthdate"
+                title="Choose your date of birth"
+              />
+            </p>
+            <p>
+              <label for="appointment">Preferred Visit Time:</label><br />
+              <input
+                type="time"
+                id="appointment"
+                name="appointment"
+                title="Choose your preferred time"
+              />
+            </p>
+            <p>
+              <label for="meeting">Preferred Meeting Date and Time:</label
+              ><br />
+              <input
+                type="datetime-local"
+                id="meeting"
+                name="meeting"
+                title="Choose meeting date and time"
+              />
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Citizen Preferences</legend>
+            <p>
+              <label for="ward">Ward Number:</label><br />
+              <input
+                type="number"
+                id="ward"
+                name="ward"
+                min="1"
+                max="250"
+                placeholder="Example: 120"
+                title="Enter ward number"
+              />
+            </p>
+            <p>
+              <label for="satisfaction">Service Satisfaction:</label><br />
+              <input
+                type="range"
+                id="satisfaction"
+                name="satisfaction"
+                min="0"
+                max="10"
+                title="Choose satisfaction level"
+              />
+            </p>
+            <p>
+              <label for="favcolor">Preferred Portal Theme Color:</label><br />
+              <input
+                type="color"
+                id="favcolor"
+                name="favcolor"
+                title="Choose a color"
+              />
+            </p>
+            <p>
+              <label for="document">Upload Address Proof:</label><br />
+              <input
+                type="file"
+                id="document"
+                name="document"
+                title="Upload a document"
+              />
+            </p>
+            <p>
+              Gender:<br />
+              <input type="radio" id="female" name="gender" value="female" />
+              <label for="female">Female</label><br />
+              <input type="radio" id="male" name="gender" value="male" />
+              <label for="male">Male</label><br />
+              <input type="radio" id="other" name="gender" value="other" />
+              <label for="other">Other</label>
+            </p>
+            <p>
+              Services Interested In:<br />
+              <input type="checkbox" id="metro" name="service" value="metro" />
+              <label for="metro">Metro updates</label><br />
+              <input type="checkbox" id="waste" name="service" value="waste" />
+              <label for="waste">Waste management</label><br />
+              <input type="checkbox" id="water" name="service" value="water" />
+              <label for="water">Water conservation</label><br />
+              <input type="checkbox" id="parks" name="service" value="parks" />
+              <label for="parks">Parks and lakes</label>
+            </p>
+            <p>
+              <label for="area">Area:</label><br />
+              <select id="area" name="area" title="Choose your Bengaluru area">
+                <option value="">Select area</option>
+                <option value="majestic">Majestic</option>
+                <option value="whitefield">Whitefield</option>
+                <option value="jayanagar">Jayanagar</option>
+                <option value="indiranagar">Indiranagar</option>
+                <option value="electronic-city">Electronic City</option>
+              </select>
+            </p>
+            <p>
+              <label for="feedback">Feedback Message:</label><br />
+              <textarea
+                id="feedback"
+                name="feedback"
+                rows="6"
+                cols="45"
+                placeholder="Write your suggestion for smart Bengaluru"
+                title="Type your feedback"
+              ></textarea>
+            </p>
+          </fieldset>
+
+          <p>
+            <input
+              type="submit"
+              value="Submit Registration"
+              title="Submit form"
+            />
+            <input type="reset" value="Reset Form" title="Clear form" />
+          </p>
+        </form>
+      </section>
+
+      <section>
+        <h2>Map</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d216418.00524905202!2d77.45715636378061!3d12.987925086449176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e1!3m2!1sen!2sin!4v1779101303240!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+
+      <aside>
+        <h2>Contact Details</h2>
+        <address>
+          Smart City Help Desk<br />
+          Bengaluru, Karnataka, India<br />
+          Email:
+          <a href="mailto:info@smartcitybengaluru.example" title="Send email"
+            >info@smartcitybengaluru.example</a
+          ><br />
+          Phone:
+          <a href="tel:+918022222222" title="Call help desk"
+            >+91 80 2222 2222</a
+          >
+        </address>
+      </aside>
+    </main>
+
+    <footer>
+      <hr />
+      <p>&copy; 2026 Smart City Information Portal</p>
+      <p><a href="#top" title="Back to top">Back to top</a></p>
+    </footer>
+  </body>
+</html>

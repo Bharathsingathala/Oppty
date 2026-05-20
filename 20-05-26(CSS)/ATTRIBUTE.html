@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Attribute Selectors</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Attribute Selectors</h1>
+
+    <!-- Has attribute -->
+    <p title="hello">
+        Paragraph with title
+    </p>
+
+    <!-- Exact value -->
+    <input type="text" placeholder="Text Input">
+    <input type="text" placeholder="firstname">
+
+    <input type="email" placeholder="Email Input">
+
+    <hr>
+
+    <!-- Contains word -->
+    <p title="red flower">
+        Rose Flower
+    </p>
+    <p title="black flower">
+        Rose Flower
+    </p>
+    <p title="white flower">
+        Rose Flower
+    </p>
+
+    <hr>
+
+    <!-- Starts with -->
+    <p lang="en-US">
+        English Text
+    </p>
+     <p lang="us-en-US">
+        English Text
+    </p>
+
+     <p class="ind-en-US">
+        12345
+    </p>
+
+    <hr>
+
+    <!-- Starts with text -->
+    <a href="https://google.com">
+        Google
+    </a>
+
+    <a href="http://example.com">
+        Example
+    </a>
+
+    <hr>
+
+    <!-- Ends with -->
+    <img src="photo.jpg" width="200" alt="Photo">
+
+    <img src="logo.png" width="200" alt="Logo">
+
+    <hr>
+
+    <!-- Contains text -->
+    <div class="box-red">
+        Red Box
+    </div>
+
+    <div class="box-blue">
+        Blue Box
+    </div>
+
+</body>
+
+</html>

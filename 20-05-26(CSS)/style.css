@@ -1,0 +1,364 @@
+/* body {
+    font-family: Arial;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+}
+
+.card h2 {
+    color: blue;
+}
+
+.card p {
+    color: gray;
+}
+
+.button {
+    background: green;
+    color: white;
+    padding: 10px;
+}
+
+.button:hover {
+    background: rgb(5, 79, 183)
+} */ 
+
+/* General Styling */
+
+/* body {
+    font-family: Arial;
+    background: #f1f0f0;
+    padding: 20px;
+}
+
+.container {
+    background: rgb(37, 150, 236);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* -------------------------------- */
+/* PSEUDO-CLASSES */
+/* -------------------------------- */
+
+/* 1. :hover */
+
+/* .btn {
+    background: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+} */
+
+/* .btn:hover {
+    background: red;
+} */
+
+/*
+When mouse hovers:
+Blue → Red
+*/
+
+/* -------------------------------- */
+
+/* 2. :focus */
+
+/* input {
+    padding: 10px;
+    border: 2px solid gray;
+} */
+
+/* input:focus {
+    border-color: blue;
+    outline:none;
+} */
+
+/*
+When input clicked:
+Border becomes blue
+*/
+
+/* -------------------------------- */
+
+/* 3. :active */
+
+/* .active-btn {
+    padding: 10px 20px;
+    background: green;
+    color: white;
+    border: none;
+} */
+
+/* .active-btn:active {
+    background: orange;
+} */
+
+/*
+While clicking button:
+Green → Orange
+*/
+
+/* -------------------------------- */
+
+/* 4. :visited */
+
+/* a:visited {
+    color: rgb(239, 108, 7);
+} */
+
+/*
+After visiting link:
+Link becomes purple
+*/
+
+/* -------------------------------- */
+
+/* 5. :first-child */
+
+/* .list li:first-child {
+    color: red;
+} */
+
+/*
+Only Apple becomes red
+*/
+
+/* -------------------------------- */
+
+/* 6. :last-child */
+
+/* .list li:last-child {
+    color: blue;
+} */
+
+/*
+Only Orange becomes blue
+*/
+
+/* -------------------------------- */
+
+/* 7. :nth-child() */
+
+/* tr:nth-child(even) {
+    background: rgb(236, 8, 8);
+} */
+
+/*
+Even rows become gray
+*/
+
+/* -------------------------------- */
+/* PSEUDO-ELEMENTS */
+/* -------------------------------- */
+
+/* 1. ::before */
+
+/* .quote::before {
+    content: "🔥 ";
+}
+
+/*
+Adds fire emoji before text
+*/
+
+/* -------------------------------- */
+
+/* 2. ::after */
+
+/* .quote::after {
+    content: " 🔥";
+} */
+
+/*
+Adds fire emoji after text
+*/
+
+/* -------------------------------- */
+
+/* 3. ::first-letter */
+
+/* .letter::first-letter {
+    font-size: 40px;
+    color: red;
+    font-weight: bold;
+} */
+
+/*
+First letter becomes large
+*/
+
+/* -------------------------------- */
+
+/* 4. ::first-line */
+
+/* .line::first-line {
+    color: blue;
+    font-weight: bold;
+} */
+
+/*
+Only first line styled
+*/
+
+/* -------------------------------- */
+
+/* 5. ::selection */
+/* 
+.selection::selection {
+    background: yellow;
+    color: red;
+} */
+
+
+
+/*
+Selected text becomes yellow
+ */
+ /* -------------------------------- */
+/* 1. [attribute] */
+/* -------------------------------- */
+
+[title] {
+    border: 2px solid blue;
+    background-color: lightgray;
+}
+
+/*
+Selects ALL elements
+having title attribute
+*/
+
+/* -------------------------------- */
+/* 2. [attribute="value"] */
+/* -------------------------------- */
+
+input[type="text"] {
+    background: lightyellow;
+}
+input[type="email"] {
+    background: rgb(10, 217, 217);
+}
+
+/*
+ONLY text input selected
+*/
+
+/* -------------------------------- */
+/* 3. [attribute~="value"] */
+/* -------------------------------- */
+
+[title~="flower"] {
+    color: red;
+}
+
+/*
+Selects title containing word "flower"
+*/
+
+/* -------------------------------- */
+/* 4. [attribute|="value"] */
+/* -------------------------------- */
+
+[lang|="en"] {
+    background: lightblue;
+    text-decoration: underline;
+}
+
+/*
+Matches:
+en
+en-US
+en-UK
+*/
+
+/* -------------------------------- */
+/* 5. [attribute^="value"] */
+/* -------------------------------- */
+
+a[href^="https"] {
+    color: green;
+}
+
+/*
+Links starting with https
+*/
+
+/* -------------------------------- */
+/* 6. [attribute$="value"] */
+/* -------------------------------- */
+
+img[src$=".png"] {
+    border: 5px solid red;
+}
+
+/*
+Images ending with .png
+*/
+
+/* -------------------------------- */
+/* 7. [attribute*="value"] */
+/* -------------------------------- */
+
+[class*="red"] {
+    background: pink;
+}
+
+/*
+Class containing "red"
+*/
+
+/* ---------------COMBINATOR----------------- */
+/* -------------------------------- */
+/* 1. Descendant Selector */
+/* -------------------------------- */
+
+.descendant p {
+    color: blue;
+}
+
+/*
+All p inside .descendant
+*/
+
+/* -------------------------------- */
+/* 2. Child Selector */
+/* -------------------------------- */
+
+.child > p {
+    color: red;
+}
+
+/*
+ONLY direct child p
+*/
+
+/* -------------------------------- */
+/* 3. Adjacent Sibling */
+/* -------------------------------- */
+
+h2 + p {
+    background: yellow;
+}
+h2 + p + p {
+    background: orange;
+}
+
+/*
+ONLY first p after h2
+*/
+
+/* -------------------------------- */
+/* 4. General Sibling */
+/* -------------------------------- */
+
+h3 ~ p {
+    border: 2px solid green;
+}
+
+/*
+ALL p after h3
+*/

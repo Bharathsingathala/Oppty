@@ -1,0 +1,44 @@
+body{
+    background-color: lightgray;
+    font-family: 'Great Vibes', cursive;
+}
+.container{
+    background-color: #5ba57c;
+    margin: auto;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    color: black;
+}
+
+.form-box{
+    background-color: white;
+    padding:20px 10px 50px 30px;
+    border-radius: 10px;
+}
+
+h2{
+    text-align: center;
+    font-size: 45px;
+}
+.row{
+    margin-bottom: 25px;
+}
+label{
+    width: 180px;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+input{
+    width: 170px;
+    height: 22px;
+}
+
+select{
+    width: 70px;
+    height: 28px;
+}

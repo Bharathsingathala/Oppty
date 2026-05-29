@@ -1,0 +1,53 @@
+body{
+    margin: 250px 300px;
+    background: #EEAECA;
+    background: linear-gradient(nulldeg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    font-size: 25px;
+}
+.ca{
+    background-color: white;
+    border-radius: 25px;
+    
+}
+.backimg img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px
+}
+.prot img{
+    height: 200px;
+    padding-left: 250px;
+}
+.dot{
+    padding-left: 550px;
+    display: inline;
+}
+.te{
+    padding: 50px;
+    text-align: center;
+}
+#n{
+    font-size: 50px;
+    font-family: cursive;
+}
+.fo{
+    display: flex;
+    gap: 50px;
+    text-align: center;
+    padding-left: 170px;
+    font-size: 23px;
+}
+.fo h3{
+    color: chartreuse;
+}
+button{
+     padding: 15px 50px;
+    color: #080808;
+    font-size: 15px;
+    border-radius: 25px;
+    background-color: yellow;
+
+}
+.mat{
+   font-style: oblique;
+}

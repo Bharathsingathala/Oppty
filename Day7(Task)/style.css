@@ -1,0 +1,129 @@
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 2px solid ;
+}
+header {
+  background-color: black;
+  color: aliceblue;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  
+}
+nav{
+    padding: 25px;
+    justify-content: end;
+    text-align: right;
+    display: flex;
+    gap: 40px; 
+}
+nav a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 25px;
+    
+}
+.home:hover{
+    color: yellow;
+    border-bottom: solid yellow;
+ }
+ .ser:hover{
+    color: yellow;
+    border-bottom: solid yellow;
+ }
+.c:hover{
+    color: yellow;
+    border-bottom: solid yellow;
+}
+.his {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(49, 182, 182);
+    padding: 10px;
+}
+.his img{
+    border-radius:80%;
+}
+.his button{
+    width: 25%;
+    font-size: 15px;
+    background-color: blue;
+    border-radius: 10px;
+}
+.skills{
+    display: grid;
+    text-align: center;
+    background-color: aquamarine;
+    padding: 10px;
+}
+.img{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+.sk{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    justify-content: center;
+    width: 150px;
+    align-items: center;
+    padding-top: 10px;
+}
+.project{
+background-color: rgb(54, 244, 181);
+padding: 10px;
+}
+.project h2{
+    text-align: center;
+}
+.pr{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.p{
+    background-color: white;
+    padding: 10px;
+    height: 310px;
+    border-radius: 10px;
+}
+.p img{
+    width: 450px;
+    height: 150px;
+    border-radius: 10px;
+
+}
+.p button{
+     width: 50%;
+    font-size: 15px;
+    background-color: blue;
+    border-radius: 10px;
+}
+.contact{
+    text-align: center;
+    background-color: rgb(8, 228, 228);
+    padding: 10px;
+}
+.contact form{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.contact button{
+     width: 25%;
+    font-size: 15px;
+    background-color: blue;
+    border-radius: 10px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(231, 46, 46);
+}

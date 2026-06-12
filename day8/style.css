@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+.top-bar {
+    background: #666;
+    color: white;
+    height: 45px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding: 0 40px;
+    font-size: 15px;
+}
+
+.top-bar a {
+    color: white;
+    text-decoration: none;
+}
+
+.top-bar input {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+}
+.b{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: black;
+    color: #000000;
+    padding-top: 2px;
+}
+.w {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #ccc;
+    padding-top: 2px;
+}
+
+.navbar {
+    height: 65px;
+    background: #f68b1f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.menu {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.home {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sec {
+    position: relative;
+    height: 690px;
+    overflow: hidden;
+    background: #506173;
+}
+
+.sec img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+} 
+
+.logo img {
+    width: 50px;
+    color: #ccc;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    width: 65px;
+    height: 65px;
+    color: white;
+    font-size: 55px;
+    display: flex;
+    cursor: pointer;
+}
+
+.arrow.left {
+    left: 20px;
+}
+
+.arrow.right {
+    right: 20px;
+}
+
+.qut {
+    position: absolute;
+    bottom: 80px;
+    right: 50px;
+    width: 600px;
+    background: rgba(0, 0, 0, 0.45);
+    color: white;
+    padding: 30px;
+}
+
+.qut h2 {
+    font-size: 15px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.dots {
+    position: absolute;
+    bottom: 5PX;
+    left: 40%;
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #f68b1f;
+    background: white;
+}
+
+.dot.active {
+    background: #f68b1f;
+}
+
+.news {
+    padding: 50px;
+    background-color: #ccc;
+}
+
+.news h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.news button{
+        background-color: #f7c800;
+        color: #000;
+        border: none;
+        height: 50px;
+        width: 150px;
+        position: relative;
+        left: 90%;
+}
+
+.news-con {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.card {
+    display: flex;
+    gap: 10px;
+}
+
+.card img {
+    width: 200px;
+    height: 120px;
+    object-fit: contain;
+    border-top-left-radius: 10%;
+}
+.link {
+    width: 100%;
+    background-color: #4b4747;
+    display: flex;
+    justify-content: space-between;
+    gap: 3px;
+    padding: 5px 0;
+}
+
+.link-card {
+    position: relative;
+    width: 25%;
+    background-color: #ffffff;
+}
+
+.link-card img {
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+}
+.link-card :hover {
+    background-color: #ffffffd0;
+    opacity: 1;
+}
+.link-card button {
+    position: absolute;
+    left: 45px;
+    bottom: 40px;
+    background-color: #f7ca00da;
+    color: #000;
+    border: none;
+    padding: 12px 18px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.link-card button:hover {
+    background-color: #e6b800;
+}

@@ -4,11 +4,11 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f9f9f9;
+    background: #9b1e1e;
 }
 
 .top-bar {
-    background: #363333;
+    background: #666;
     color: white;
     height: 45px;
     display: flex;
@@ -17,7 +17,6 @@ body {
     gap: 10px;
     padding: 0 40px;
     font-size: 15px;
-
 }
 
 .top-bar a {
@@ -29,7 +28,8 @@ body {
     padding: 6px 10px;
     border: 1px solid #ccc;
 }
-.b{
+
+.b {
     width: 20px;
     height: 20px;
     text-align: center;
@@ -38,6 +38,7 @@ body {
     color: #000000;
     padding-top: 2px;
 }
+
 .w {
     width: 20px;
     height: 20px;
@@ -72,6 +73,7 @@ body {
 .sec {
     position: relative;
     height: 690px;
+    overflow: hidden;
     background: #506173;
 }
 
@@ -80,11 +82,12 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
 .logo {
     position: absolute;
     top: 20px;
     left: 50px;
-} 
+}
 
 .logo img {
     width: 50px;
@@ -126,6 +129,25 @@ body {
     text-transform: uppercase;
 }
 
+.dots {
+    position: absolute;
+    bottom: 5PX;
+    left: 40%;
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #f68b1f;
+    background: white;
+}
+
+.dot.active {
+    background: #f68b1f;
+}
 
 .news {
     padding: 50px;
@@ -136,14 +158,15 @@ body {
     text-align: center;
     margin-bottom: 40px;
 }
-.news button{
-        background-color: #f7c800;
-        color: #000;
-        border: none;
-        height: 50px;
-        width: 150px;
-        position: relative;
-        left: 90%;
+
+.news button {
+    background-color: #f7c800;
+    color: #000;
+    border: none;
+    height: 50px;
+    width: 150px;
+    position: relative;
+    left: 90%;
 }
 
 .news-con {
@@ -163,10 +186,13 @@ body {
     object-fit: contain;
     border-top-left-radius: 10%;
 }
+
 .link {
     width: 100%;
     background-color: #4b4747;
     display: flex;
+    justify-content: space-between;
+    gap: 3px;
     padding: 5px 0;
 }
 
@@ -181,10 +207,12 @@ body {
     width: 100%;
     height: 100%;
 }
+
 .link-card :hover {
     background-color: #ffffffd0;
     opacity: 1;
 }
+
 .link-card button {
     position: absolute;
     left: 45px;
@@ -200,14 +228,16 @@ body {
 .link-card button:hover {
     background-color: #e6b800;
 }
+
 .main-section {
     display: grid;
     grid-template-columns: 35% 30% 35%;
+    min-height: 450px;
 }
 
 .left-panel {
     padding: 80px 40px;
-    background: #c7bc6d;
+    background: #e6dea5;
 }
 
 .left-panel h1 {
@@ -229,12 +259,13 @@ body {
     padding: 15px 25px;
     cursor: pointer;
 }
+
 .center-panel {
-    background: #3937c4;
+    background: #87666c;
 }
 
 .pm-card img {
-    padding:  10px;
+    padding: 10px;
     width: 100%;
     height: 300px;
     object-fit: contain;
@@ -263,6 +294,7 @@ body {
     cursor: pointer;
 }
 
+/* Former PM */
 
 .former-pm {
     background-color: #383d47;
@@ -290,6 +322,7 @@ body {
     object-fit: cover;
 }
 
+/* Right */
 
 .right-panel {
     padding: 80px 50px;
@@ -315,6 +348,7 @@ body {
     cursor: pointer;
 }
 
+/* PM Interaction */
 
 .pm-interact {
     background: #07356a;
@@ -324,7 +358,7 @@ body {
 }
 
 .pm-interact h2 {
-    font-size: 30px;
+    font-size: 55px;
     margin-bottom: 50px;
 }
 
@@ -350,6 +384,8 @@ body {
 
 
 
+/* Government Section */
+
 .government-section {
     background: #3d4147;
     padding: 60px 30px;
@@ -358,7 +394,7 @@ body {
 .government-section h2 {
     color: white;
     text-align: center;
-    font-size: 30px;
+    font-size: 55px;
     margin-bottom: 50px;
 }
 
@@ -390,6 +426,9 @@ body {
 }
 
 
+
+/* Footer */
+
 footer {
     background: #262626;
     color: white;
@@ -400,7 +439,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -419,6 +458,16 @@ footer {
     text-decoration: none;
     font-size: 14px;
 }
+
+.footer-links a::after {
+    content: "|";
+    margin-left: 12px;
+}
+
+.footer-links a:last-child::after {
+    content: "";
+}
+
 .footer-item img {
     width: 70px;
 }

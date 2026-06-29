@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box1{
+        height: 150px;
+        width: 150px;
+        border: 1px solid black;
+        background-color: aquamarine;
+    }
+    .box3{
+        height: 150px;
+        width: 150px;
+        border: 1px solid black;
+        background-color: rgb(92, 235, 52);
+        /* transition-property: all;
+        transition-duration: 0.5s; */
+        /* transition-property: opacity;
+        transition-duration: .8s; */
+        transition-property: transform;
+        transition-duration: 1s;
+    }
+    .grp{
+        background-color: rgb(247, 174, 79);
+        margin-top: 20px;
+    }
+    p{
+        padding: 50px 55px;
+    }
+    #B2{
+        margin-top: 20px;
+    }
+    #B1:hover{
+        background-color: lime;
+        transition-duration: 2s;
+         transform: /*translateX(100px); */
+                    /* translateY(100px) */
+                    /* translate(100px, 50px); */
+                    /* translate3d(100px, 100px, 150px) */
+                    /* scaleX(2) */
+                    /* scaleY(2) */
+                    /* scale(1.5) */
+                    /* scale3d(1.5, 1.5, 1) */
+                    /* rotateX(90deg) */
+                    /* rotateY(180deg); */
+                    /* rotateZ(180deg) */
+                    /* rotate3d(1, 1, 1,  180deg) */
+                    /* skewX(20deg) */
+                    /* skewY(20deg) */
+                    matrix(1, 0.3, -0.3, 1, 50, 20);
+                    /*scaleX=1, skewY=0.3, skewX=-0.3, scaleY=1, translateX=50px, translateY=30px */
+
+    }
+    #B2:hover{
+        background-color: darksalmon;
+        /* transition-duration: 2s; */
+          transition-timing-function: /* linear */
+                                    /*ease */
+                                    /* ease-in */
+                                    /* ease-out */
+                                    /* ease-in-out */
+                                    /* step-start */
+                                    /* step-end */
+                                    steps(10) ;
+        transition-duration: 5s;
+    }
+    #B3:hover{
+        /* width: 200px;
+        background-color: red;
+        border-radius: 50%; */
+        /* opacity: .3; */
+         transform: translateX(500px);
+    }
+
+
+</style>
+<body>
+    <div class="box1" id="B1"> <p>Box</p></div>
+    <div class="box1" id="B2"> <p>Box</p> </div>
+    <div class="grp">
+        <div class="box3 " id="B3">
+            
+        </div>
+        <div class="box4" id="B4">
+
+        </div>
+    </div>
+</body>
+</html>

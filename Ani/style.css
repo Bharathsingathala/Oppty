@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+}
+body{
+    background-color: white;
+}
+header{
+    background-color: green;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    display: flex;
+}
+nav{
+    display: flex;
+    gap: 30px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav h3:hover{
+ text-decoration: underline;
+}
+.s1{
+    display: flex;
+    gap: 30px;
+    margin: 40px;
+    
+}
+.ani{
+    text-align: center;
+    border: 1px solid green;
+    margin: 10px;
+    width: 50%;
+    padding: 30px;
+
+}
+.ani h1{
+    font-weight: bold;
+}
+.ani1 p{
+    animation: fade-in 5s ease-in 1s 3 ;
+}
+@keyframes fade-in{
+    0%{
+        color: aqua;
+        opacity: 1;
+    }
+    50% 
+    {
+        color: rgb(0, 64, 255);
+        opacity: 0.5;
+
+    }
+    100% 
+    {
+        color: rgb(255, 0, 247);
+        opacity: 0;
+    }
+}
+.ani2 p{
+    animation: fade-out 5s ease-in 1s 3;
+}
+@keyframes fade-out {
+    0% {
+        color: aqua;
+        opacity: 0;
+    }
+
+    50% {
+        color: rgb(0, 64, 255);
+        opacity: 0.5;
+
+    }
+
+    100% {
+        color: rgb(255, 0, 247);
+        opacity: 1;
+    }
+}
+.syn{
+    background-color: green;
+    display: flex;
+    gap:50px;
+    padding: 20px;
+    justify-content: center;
+}
+.left{
+    padding-top: 50px;
+}
+.ani-pro{
+    text-align: center;
+}
+.exm{
+    background-color: gray;
+    padding: 40px;
+}
+.con{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-top: 40px;
+   
+}
+.box button{
+    padding: 20px 100px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: green;
+    animation: slide 3s linear 1s 3 forwards;
+}
+@keyframes slide{
+    from{
+        transform: translate(0px);
+        opacity: 0;
+    }
+    to{
+        transform: translate(20px, -30px);
+        opacity: 1;
+    }
+}
+.bt{
+    background-color: green;
+    padding: 40px;
+}
+.btn {
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid;
+    background: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.4s ease,
+        color 0.4s ease,
+        transform 0.3s ease;
+}
+
+.red-btn {
+    color: red;
+    border-color: red;
+}
+
+.red-btn:hover {
+    background: red;
+    color: white;
+    transform: scale(1.2);
+}
+
+.green-btn {
+    color: green;
+    border-color: green;
+}
+
+.green-btn:hover {
+    background: rgb(7, 15, 7);
+    color: white;
+    transform: scale(1.05);
+}
+.blue-btn {
+    color: blue;
+    border-color: blue;
+}
+
+.blue-btn:hover {
+    background: blue;
+    color: white;
+    transform: scale(1.05);
+}
+.lo{
+    background-color: transparent;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    animation: buffer 3s linear 1s 3 forwards;
+    
+}
+@keyframes buffer {
+    from {
+        transform: rotate(0deg);
+        border-top: 6px dashed black;
+    }
+
+    to {
+        transform: rotate(360deg);
+        border-top: 6px dashed black;
+    }
+}
+.card {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-top: 40px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.8s;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+.front
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+.front {
+    background: #3498db;
+}
+footer{
+    background-color: green;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    
+}

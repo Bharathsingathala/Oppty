@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h2>CSS Animation</h2>
+      <nav>
+        <h3>Basic CSS</h3>
+        <h3>Animation</h3>
+        <a href="pe.html"><h3>Pesudo</h3></a>
+        <h3>Media</h3>
+      </nav>
+    </header>
+    <section class="s1">
+      <div class="ani ani1">
+        <h1>ANIMATION</h1>
+        <p>
+          CSS Animation is used to change the style of an element automatically
+          over time without requiring user interaction like hover or click.
+        </p>
+      </div>
+      <div class="ani ani2">
+        <h1>@keyframe</h1>
+        <p>
+          @keyframes is used to define the different stages of an animation.
+        </p>
+      </div>
+    </section>
+    <section class="syn">
+      <div class="left">
+        <h1>Selector + @keyframe</h1>
+        <p></p>
+      </div>
+      <div>
+        <p>
+          selector { <br />
+          animation-name: name; <br />
+          animation-duration: time; <br />
+          animation-iteration-count: number; <br />
+          animation-timing-function: ease |
+          <br />
+          linear | etc; animation-delay: time; <br />
+          animation-direction: normal |
+          <br />
+          reverse | alternate; <br />
+          }
+        </p>
+      </div>
+      <div class="syn2">
+        <p>
+          @keyframes animationName { <br />
+          from { <br />
+          property: value; <br />
+          } <br />
+          to { <br />
+          property:value;<br />
+          } <br />
+          }
+        </p>
+      </div>
+    </section>
+    <h1 style="text-align: center; margin-top:3px;">Example</h1>
+    <section class="exm">
+      <div class="con">
+        <div>
+          <h2>Fade-in and slide-up Card:</h2>
+          <p>
+            Create a card that starts transparent and moving to certain pixels
+            and animates to actual card on page load.
+          </p>
+        </div>
+        <div class="box"><button>EXP</button></div>
+      </div>
+      <div class="con">
+        <div >
+          <h2>Color Pulse Button:</h2>
+          <p>
+            Create a 3 button with 3 different color and when mouse hover is
+            happened, change the background color to button color with smooth
+            transition.
+          </p>
+        </div>
+        <div class="bt">
+          <button class="btn red-btn">Red</button>
+          <button class="btn green-btn">Green</button>
+          <button class="btn blue-btn">Blue</button>
+        </div>
+      </div>
+      <div class="con">
+        <div>
+          <h2>Spinner on Button:</h2>
+          <p>
+            Create a button and when user hover on it the spinner or loader will appear on the button.
+          </p>
+        </div>
+        <div class="lo">
+            <!-- <div class="lodder"></div> -->
+        </div>
+      </div>
+      <div>
+    <div class="card">
+        <div>
+            <h2>Card Flip:</h2>
+            <p>Create a flipping Card (Front/back) using Key Frames.</p>
+        </div>
+
+    <div class="card-inner">
+
+        <div class="front">
+            FRONT
+        </div>
+
+        <div class="back">
+            BACK
+        </div>
+
+    </div>
+
+</div>
+    </section>
+    <footer>
+        <h2>
+            © All Rights Reserved By This
+        </h2>
+    </footer>
+  </body>
+</html>

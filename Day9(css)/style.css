@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    background-color: green;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    display: flex;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav h3:hover {
+    text-decoration: underline;
+}
+.anim{
+    background-color: aqua;
+    padding: 50px;
+}
+.anim-card{
+    display: flex;
+    gap: 20px;
+
+}
+.card{
+    background-color: white;
+    height: auto;
+    width: 50%;
+    animation: bounce 10s ease 1s 3 forwards;
+    
+}
+.card-img{
+    padding-left: 25%;
+    padding-top: 30px;
+}
+.card-img img{
+    height: 100px;
+    width: 100px;
+    
+}
+.content{
+    margin-top: 10px;
+    padding: 40px 30px;
+}
+.content h2{
+    text-align: center;
+}
+.content p{
+    font-size: 12px;
+    margin-top: 10px;
+}
+.content button{
+    margin-top: 20px;
+    margin-left: 30px;
+    padding: 10px 20px;
+    background-color: chartreuse;
+    border: none;
+}
+.content h5{
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.content del {
+    color: red;
+}
+.ci1 img{
+    animation: fade 10s ease 1s 3 ;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0.6;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.c2 h2{
+animation: slide 10s ease 1s 3;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(40px);
+    }
+    100%{
+        transform: translateX(0)
+    }
+}
+.c3 p{
+    animation: zoom 10s ease 1s 3;
+}
+@keyframes zoom{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+.c4 button:hover{
+animation: rotate 10s ease 1s 3;
+}
+@keyframes rotate{
+    from{
+        border-radius: 70%;
+        border-top: 2px dot black;
+        transform: rotate(0deg);
+    }
+    to{
+        border-radius: 0%;
+        border-top: 2px dot black;
+        transform: rotate(360deg);
+    }
+}
+
+.c5 h5{
+    animation: bounce 10s ease 1s 3 forwards;
+}
+@keyframes bounce{
+    0%{
+        transform: translateY(20px);
+    }
+    50%{
+        transform: translateY(-20px) ;
+    }
+    100%{
+        transform:translateY(20px) ;
+    }
+}
+.content button{
+    animation: col 5s ease 1s 3 ;
+}
+@keyframes col{
+    0%{
+        color: #e53935;
+        border: 1px solid red;
+    }
+    25%{
+        color: #e5b035;
+        border: 1px solid rgb(255, 183, 0);
+    }
+    50%{
+        color: #cbe535;
+        border: 1px solid rgb(234, 255, 0);
+    }
+    75%{
+        color: #35d3e5;
+        border: 1px solid rgb(0, 213, 255);
+    }
+    100%{
+        color: #dc35e5;
+        border: 1px solid rgb(183, 0, 255);
+    }
+}
+.pes{
+    background-color:var(--green);
+}
+.pesu{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+:root {
+    --main: #2196f3;
+    --green: #4caf50;
+    --red: #e53935;
+    --orange: #ff9800;
+}
+
+
+.examples h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.ca {
+    background: #ffffff;
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 25px;
+    width: 500px;
+}
+
+.ca h2 {
+    color: var(--main);
+    margin-bottom: 15px;
+}
+.active-btn {
+    padding: 10px 20px;
+    border: none;
+    background: #444;
+    color: white;
+    cursor: pointer;
+}
+
+.active-btn:active {
+    background: var(--red);
+}
+input:focus {
+    outline: none;
+    border: 3px solid var(--green);
+}
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+.first-demo p:first-child {
+    color: red;
+    font-weight: bold;
+}
+.last-demo p:last-child {
+    color: green;
+    font-weight: bold;
+}
+
+.nth-demo li:nth-child(2) {
+    background: gold;
+}
+.nth-last-demo li:nth-last-child(2) {
+    background: orange;
+}
+.only-demo p:only-child {
+    color: blue;
+    font-size: 20px;
+}
+.empty-box {
+    width: 120px;
+    height: 50px;
+    border: 2px solid red;
+    margin-bottom: 10px;
+}
+
+.empty-box:empty {
+    background: pink;
+}
+
+.filled-box {
+    width: 120px;
+    height: 50px;
+    border: 2px solid green;
+    padding: 10px;
+}
+input:checked {
+    width: 20px;
+    height: 20px;
+}
+
+input:disabled {
+    background: #ddd;
+}
+input:enabled {
+    border: 2px solid green;
+}
+
+form input:autofill {
+    border: 5px solid rgb(128, 0, 0);
+}
+
+.box {
+    padding: 10px;
+    margin: 5px;
+    background: #ddd;
+}
+
+.box:not(.special) {
+    background: lightblue;
+}
+#target-box {
+    margin-top: 15px;
+    padding: 15px;
+    border: 2px solid gray;
+}
+
+#target-box:target {
+    background: yellow;
+    border-color: red;
+}
+.lan p:lang(it){
+    color: #e53935;
+    font-style: italic;
+}
+
+.root-demo {
+    background: var(--main);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+input,
+button,
+a {
+    margin-top: 10px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin: 5px 0;
+}
+footer {
+    background-color: green;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+
+}

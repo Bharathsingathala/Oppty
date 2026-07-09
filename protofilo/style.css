@@ -1,0 +1,245 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Quicksand", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+}
+
+
+body{
+    background:#0f172a;
+    color:#fff;
+    line-height:1.6;
+}
+section
+{
+    padding:80px 8%;
+}
+img{
+    max-width:100%;
+    display:block;
+}
+a 
+{
+    text-decoration:none;
+}
+
+header{
+    position:fixed;
+    top:0;left:0;
+    width:100%;
+    background:rgba(15,23,42,.9);
+    z-index:1000;
+}
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+}
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#fff;
+}
+.logo span
+{
+    color:#38bdf8;
+}
+.nav-links{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+.nav-links a{
+    color:#fff;
+    transition:.3s;
+}
+.nav-links a:hover{
+    color:#38bdf8;
+}
+.hero{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+    background-color: #000;
+}
+.hero-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+    width:100%;
+    margin-top: 40px;
+}
+.hero-content h3
+{
+    font-size:28px;
+}
+.hero-content h1{
+    font-size:52px;
+    margin:10px 0;
+    line-height:1.2;
+}
+.hero-content h2{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+.hero-content p{
+    max-width:600px;
+    margin-bottom:25px;
+}
+.hero-buttons{
+    display:flex;
+    gap:15px;
+    margin-bottom:25px;
+}
+.btn,.btn-small{
+    background:#38bdf8;
+    color:#000;
+    padding:12px 24px;
+    border-radius:6px;
+    font-weight:600;
+    display:inline-block;
+    transition:.3s;
+}
+.btn:hover,.btn-small:hover{
+    background:#fff;
+    transform:translateY(-3px);
+}
+.btn-outline,.outline{
+    background:transparent;
+    border:2px solid #38bdf8;
+    color:#38bdf8;
+}
+.btn-outline:hover,.outline:hover{
+    background:#38bdf8;
+    color:#000;
+}
+.social-icons{
+    display:flex;
+    gap:15px;
+}
+.social-icons a{
+    color:#fff;
+    font-size:22px;
+}
+.hero-image{
+    display:flex;
+    justify-content:center;
+}
+.image-box img{
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    border:5px solid #38bdf8;
+    object-fit:cover;
+}
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+.section-title h2{
+    font-size:36px;
+    color:#38bdf8;
+}
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:20px;
+}
+.skill-card,
+.edu-content,
+.project-card,
+.contact-card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    transition:.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
+}
+.skill-card:hover,
+.project-card:hover,
+.contact-card:hover,
+.edu-content:hover{
+    transform:translateY(-8px)
+}
+.skill-card img{
+    width:60px;
+    height:60px;
+    margin:auto auto 15px;
+}
+.edu{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+.year{
+    display:inline-block;
+    background:#38bdf8;
+    color:#000;
+    padding:5px 10px;
+    border-radius:5px;
+    margin-bottom:10px;
+    font-weight:600;
+}
+.projects-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px
+}
+.project-card img{
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
+}
+.project-content{
+    padding-top:15px;
+}
+.project-content span{
+    display:block;
+    color:#38bdf8;
+    margin:8px 0;
+}
+.project-buttons{
+    display:flex;
+    gap:10px;
+    margin-top:15px;
+    margin-left: 30px;
+}
+
+.contact-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:60px;
+}
+.contact-card i{
+    font-size:20px;
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+.contact-card a{color:#38bdf8}
+.contact-card{
+    width: 270px;
+}
+.footer{
+    background:#020617;
+    padding:30px 8%;
+    text-align:center;
+}
+.footer-icons{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    margin:15px 0;
+}
+.footer-icons a{
+    color:#fff;
+    font-size:22px;
+}

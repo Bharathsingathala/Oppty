@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero {
+    background: #f3f3f3;
+    padding: 50px 0px;
+}
+
+.hero-box {
+
+    height: 300px;
+    border-radius: 10px;
+
+    background: linear-gradient(90deg, #ff00ff, #00e5ff);
+
+}
+
+
+
+.programs {
+
+    background: #cfcaca;
+
+}
+
+.program-top {
+
+    height: 170px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: white;
+
+}
+
+.program-top h1 {
+
+    font-size: 50px;
+
+    font-weight: bold;
+
+}
+
+.bg-purple {
+
+    background: #7e57ff;
+
+}
+
+.student-box {
+
+    height: 260px;
+
+    background: #e63d97;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: white;
+
+    border-radius: 8px;
+
+}
+
+.student-box h1 {
+
+    font-size: 55px;
+
+    font-weight: bold;
+
+}
+
+.footer {
+
+    background: #243c93;
+
+}
+
+.card {
+
+    border: none;
+
+}
+
+.card a {
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}

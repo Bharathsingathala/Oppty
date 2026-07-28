@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Starbucks Menu</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg bg-white border-bottom">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/330px-Starbucks_Corporation_Logo_2011.svg.png"
+            width="50"
+          />
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ms-4">
+            <li class="nav-item">
+              <a class="nav-link active fw-bold text-success" href="#">MENU</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-success" href="#">REWARDS</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-success" href="#">GIFT CARDS</a>
+            </li>
+          </ul>
+
+          <div class="ms-auto d-flex align-items-center gap-3">
+            <a href="#" class="text-dark text-decoration-none">
+              <i class="bi bi-geo-alt-fill"></i>
+
+              Find a Store
+            </a>
+
+            <button class="btn btn-outline-dark rounded-pill">Sign In</button>
+
+            <button class="btn btn-dark rounded-pill">Join Now</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SECOND MENU -->
+
+    <div class="border-bottom sticky-top bg-white">
+      <div class="container">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active text-black" href="#"> Menu </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-black" href="#"> Featured </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-black" href="#"> Previous </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-black" href="#"> Favorites </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- MAIN -->
+
+    <div class="container mt-5">
+      <div class="row">
+        <!-- SIDEBAR -->
+
+        <div class="col-lg-3 d-none d-lg-block">
+          <h5>The Latest</h5>
+
+          <div class="list-group list-group-flush">
+            <a class="list-group-item border-0" href="#latest"> Trending </a>
+
+            <a class="list-group-item border-0" href="#latest">
+              Energy Refreshers
+            </a>
+          </div>
+
+          <h5 class="mt-4">Protein</h5>
+
+          <div class="list-group list-group-flush">
+            <a class="list-group-item border-0" href="#protein">
+              Protein Beverages
+            </a>
+          </div>
+
+          <h5 class="mt-4">Coffee & Espresso</h5>
+
+          <div class="list-group list-group-flush">
+            <a class="list-group-item border-0" href="#coffee"> Hot Coffee </a>
+
+            <a class="list-group-item border-0" href="#coffee"> Cold Coffee </a>
+          </div>
+
+          <h5 class="mt-4">Tea</h5>
+
+          <div class="list-group list-group-flush">
+            <a class="list-group-item border-0" href="#tea"> Chai </a>
+
+            <a class="list-group-item border-0" href="#tea"> Matcha </a>
+
+            <a class="list-group-item border-0" href="#tea"> Hot Tea </a>
+
+            <a class="list-group-item border-0" href="#tea"> Iced Tea </a>
+          </div>
+        </div>
+
+        <!-- CONTENT -->
+
+        <div class="col-lg-9">
+          <h1 class="display-5 fw-bold">Menu</h1>
+
+          <hr />
+
+          <!-- ================= THE LATEST ================= -->
+
+          <section id="latest" class="mb-5">
+            <h3 class="fw-bold mb-4">The Latest</h3>
+
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="card border-0">
+                  <div class="card-body d-flex align-items-center">
+                    <img
+                      src="../Star/assests/images/image_1.jpg"
+                      class="rounded-circle me-3"
+                      width="90"
+                      height="90"
+                    />
+
+                    <h5 class="mb-0">Trending</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card border-0">
+                  <div class="card-body d-flex align-items-center">
+                    <img
+                      src="../Star/assests/images/image_2.jpg"
+                      class="rounded-circle me-3"
+                      width="90"
+                      height="90"
+                    />
+
+                    <h5 class="mb-0">Energy Refreshers</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ================= PROTEIN ================= -->
+
+          <section id="protein" class="mb-5">
+            <h3 class="fw-bold mb-4">Protein</h3>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card border-0">
+                  <div class="card-body d-flex align-items-center">
+                    <img
+                      src="../Star/assests/images/image_3.jpg"
+                      class="rounded-circle me-3"
+                      width="90"
+                      height="90"
+                    />
+
+                    <h5 class="mb-0">Protein Beverage</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ================= COFFEE ================= -->
+
+          <section id="coffee" class="mb-5">
+            <h3 class="fw-bold mb-4">Coffee & Espresso</h3>
+
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="card border-0">
+                  <div class="card-body d-flex align-items-center">
+                    <img
+                      src="../Star/assests/images/image_4.jpg"
+                      class="rounded-circle me-3"
+                      width="90"
+                      height="90"
+                    />
+
+                    <h5>Hot Coffee</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card border-0">
+                  <div class="card-body d-flex align-items-center">
+                    <img
+                      src="../Star/assests/images/image_5.jpg"
+                      class="rounded-circle me-3"
+                      width="90"
+                      height="90"
+                    />
+
+                    <h5>Cold Coffee</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card border-0">
+                  <div class="card-body d-flex align-items-center">
+                    <img
+                      src="../Star/assests/images/image_6.jpg"
+                      class="rounded-circle me-3"
+                      width="90"
+                      height="90"
+                    />
+
+                    <h5>Americano</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card border-0">
+                  <div class="card-body d-flex align-items-center">
+                    <img
+                      src="../Star/assests/images/image_7.jpg"
+                      class="rounded-circle me-3"
+                      width="90"
+                      height="90"
+                    />
+
+                    <h5>Caffè Latte</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ================= TEA ================= -->
+
+          <section id="tea" class="mb-5">
+            <h3 class="fw-bold mb-4">Tea</h3>
+
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="card border-0">
+                  <div class="card-body d-flex align-items-center">
+                    <img
+                      src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=150"
+                      class="rounded-circle me-3"
+                      width="90"
+                      height="90"
+                    />
+
+                    <h5>Chai Tea</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card border-0">
+                  <div class="card-body d-flex align-items-center">
+                    <img
+                      src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=150"
+                      class="rounded-circle me-3"
+                      width="90"
+                      height="90"
+                    />
+
+                    <h5>Matcha Tea</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ================= REFRESHMENT ================= -->
+
+          <section id="refreshment" class="mb-5">
+            <h3 class="fw-bold mb-4">Refreshment</h3>
+
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="card border-0">
+                  <div class="card-body d-flex align-items-center">
+                    <img
+                      src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=150"
+                      class="rounded-circle me-3"
+                      width="90"
+                      height="90"
+                    />
+
+                    <h5>Refreshers</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card border-0">
+                  <div class="card-body d-flex align-items-center">
+                    <img
+                      src="data:image/jpeg;base64,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"
+                      class="rounded-circle me-3"
+                      width="90"
+                      height="90"
+                    />
+
+                    <h5>Bottled Drinks</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <footer class="border-top mt-2 pt-3">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-2 col-md-4">
+            <h5 class="fw-bold mb-3">About Us</h5>
+
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a href="#" class="nav-link p-0 text-dark">Our Company</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link p-0 text-dark">Our Coffee</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link p-0 text-dark">About Starbucks</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link p-0 text-dark">Starbucks Archive</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link p-0 text-dark"
+                  >Investor Relations</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link p-0 text-dark">Customer Service</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link p-0 text-dark">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-4">
+            <h5 class="fw-bold mb-3">Careers</h5>
+
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a href="#" class="nav-link p-0 text-dark"
+                  >Culture and Values</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link p-0 text-dark"
+                  >Belonging at Starbucks</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link p-0 text-dark"
+                  >College Achievement Plan</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link p-0 text-dark">Alumni Community</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link p-0 text-dark">U.S. Careers</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link p-0 text-dark"
+                  >International Careers</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <h5 class="fw-bold mb-3">Social Impact</h5>
+
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a href="#" class="nav-link p-0 text-dark">Communities</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link p-0 text-dark"
+                  >Starbucks Foundation</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link p-0 text-dark">Sustainability</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link p-0 text-dark"
+                  >Environmental and Social Impact Reporting</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h5 class="fw-bold mb-3">Business</h5>
+
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a href="#" class="nav-link p-0 text-dark">Suppliers</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link p-0 text-dark"
+                  >Corporate Gift Cards</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link p-0 text-dark">Office Coffee</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="fw-bold mb-3">Order & Pick Up</h5>
+
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a href="#" class="nav-link p-0 text-dark">Order on the App</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link p-0 text-dark">Delivery</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link p-0 text-dark">Order Options</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link p-0 text-dark">Coffee at Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="my-3" />
+
+        <!-- Social Icons -->
+
+        <div class="d-flex gap-3 fs-3 mb-2">
+          <i class="bi bi-spotify"></i>
+
+          <i class="bi bi-facebook"></i>
+
+          <i class="bi bi-pinterest"></i>
+
+          <i class="bi bi-instagram"></i>
+
+          <i class="bi bi-youtube"></i>
+
+          <i class="bi bi-twitter-x"></i>
+        </div>
+
+        <!-- Footer Links -->
+
+        <div class="d-flex flex-column gap-2 mb-1">
+          <a href="#" class="text-dark text-decoration-none">Privacy Notice</a>
+
+          <a href="#" class="text-dark text-decoration-none">Terms of Use</a>
+
+          <a href="#" class="text-dark text-decoration-none"
+            >Cookie Preferences</a
+          >
+
+          <a href="#" class="text-dark text-decoration-none">Accessibility</a>
+        </div>
+
+        <p class="text-secondary">
+          © 2026 Starbucks Coffee Company. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <div
+      class="sticky-bottom bg-success-subtle mb-0"
+      style="background-color: #1e3932 !important"
+    >
+      <div class="container">
+        <div class="row text-center justify-content-center">
+          <!-- Left Side -->
+          <div class="col-10">
+            <small class="text-light opacity-75"> For item availability </small>
+
+            <div class="d-flex align-items-center justify-content-center">
+              <h6 class="text-white fw-bold">Choose a store</h6>
+
+              <i class="bi bi-chevron-down text-white ms-2"></i>
+            </div>
+
+            <hr
+              class="border-light opacity-50 my-2 mx-auto"
+              style="width: 20%"
+            />
+          </div>
+
+          <div class="col-2 text-end">
+            <button class="btn">
+              <i class="bi bi-bag text-white fs-4"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
